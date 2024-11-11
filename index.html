@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="box" id="box1">
+      <div class="box-content">
+        <h3>1 Pair <br> DKK 195.00
+          <span class="discount">50% OFF</span>
+          </h3>
+          <div class="options" id="options1">
+            <table>
+              <thead>
+                <tr>
+                  <th>Color</th>
+                  <th>Size</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <select id="color1">
+                      <option value="red">Red</option>
+                      <option value="green">Green</option>
+                      <option value="blue">Blue</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select id="size1">
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+
+    <div class="box" id="box2">
+      <div class="box-content">
+        <h3>2 Pair <br> DKK 345.00
+            <div class="discount-container">
+           <span class="popular">Most Popular</span>
+          <span class="discount">40% OFF</span>
+          </div>
+            </h3>
+        <div class="options" id="options2">
+          <table>
+            <thead>
+              <tr>
+                <th>Color</th>
+                <th>Size</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <select id="color2">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </td>
+                <td>
+                  <select id="size2">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" id="box3">
+      <div class="box-content">
+        <h3>3 Pair <br> DKK 528.00
+            <span class="discount">60% OFF</span>
+            </h3>
+            <div class="options" id="options3">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Color</th>
+                    <th>Size</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <select id="color3">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select id="size3">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+      </div>
+    </div>
+    <div class="additional-content">
+        <div class="shipping-total">
+          <p class="shipping">Free 2-Day Shipping</p>
+          <p class="total">Total: DKK 360.00</p>
+        </div>
+        <button class="add-to-cart">+ Add to Cart</button>
+      </div>
+    </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

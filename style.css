@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+ 
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex !important;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .box {
+    width: 400px; /* Initial width */
+    height: 50px; /* Initial height */
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth expansion */
+    overflow: hidden; /* Hide overflow until expanded */
+    cursor: pointer;
+  }
+  
+  
+  .box .box-content {
+    display: contents;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .box {
+    position: relative; /* Allows absolute positioning within the box */
+  }
+  
+  .box-content h3 {
+    display: contents;
+    align-items: flex-start;
+    font-size: 1.2em; 
+  }
+  
+  .popular {
+    position: absolute;
+    /* top: 0; */
+    align-items: top !important;
+    right: 10px; /* Adjust to control spacing from the right edge */
+    font-size: 0.7em; /* Adjust font size as needed */
+    color: black; /* Change color to match your design */
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  .discount-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Center-aligns the text */
+  }
+
+  .discount {
+    position: absolute;
+    top: 2em;
+    align-items: center;
+    right: 10px; /* Adjust to control spacing from the right edge */
+    font-size: 0.9em; /* Adjust font size as needed */
+    color: black; /* Change color to match your design */
+    font-weight: bold;
+  }
+
+  .options {
+    display: none;
+  }
+  
+  .box.expanded {
+    height: 300px;
+    height: auto; /* Adjust height based on content */
+    border-color: green;
+    background-color: rgb(173, 229, 230);
+  }
+  
+  .box.expanded .options {
+    display: block;
+  }
+  /* .box.clicked {
+    background-color: lightgreen; /* Change background to light green when clicked */
+  /* }  */
+  
+  select {
+    padding: 5px;
+    margin-left: 10px;
+  }
+ 
+  
+.additional-content {
+    margin-top: 5px; /* Adds space between the last box and the additional content */
+    padding: 5px;
+    width: 100%;
+    max-width: 500px; /* Ensures width matches the boxes */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    display: contents;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .shipping-total {
+    display: flex;
+    /* justify-content: space-between; */
+    width: 45%;
+    padding: 10px 0;
+  }
+  
+  .shipping {
+    font-size: 1em;
+    color: green;
+    font-weight: bold;
+    width: 45%; /* Adjust the width to make sure it aligns with the total on the right */
+  }
+  
+  .total {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    width: 45%; /* Align to the right */
+  }
+  
+  .add-to-cart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 500px; /* Ensures the button width matches the boxes */
+    text-align: center;
+  }
+  
+  .add-to-cart:hover {
+    background-color: green;
+  }
+  
